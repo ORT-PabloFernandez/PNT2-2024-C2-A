@@ -281,7 +281,7 @@ const users = [
   },
   {
     "Block credential": "FALSE",
-    City: "",
+    City: "Buenos Aires",
     "Country/Region": "",
     Department: "",
     DirSyncEnabled: "",
