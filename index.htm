@@ -10,10 +10,13 @@
         // DOM Document Object Model del HTML
         let user = document.getElementById(id);
         // TODO 1: usar querySelector en lugar de children
-        let contador = user.children[0].children[0].children[1].children[1];
-        //alert(contador.innerHTML);
+        //let contador = user.children[0].children[0].children[1].children[1];
+
+        let contador = user.querySelector(".user-item__info h3");
+        //console.log(contador);
+
         contador.innerText = parseInt(contador.innerText) + 1;
-        // TODO 2: quiero generar el comente usuario (li) de manera automatica con javascript
+        // TODO 2: quiero generar el componente usuario (li) de manera automatica con javascript
         // TIP document.createElement()
       }
     </script>
@@ -23,7 +26,7 @@
     <header>
       <nav>
         <a href="#">Home</a>
-        <a href="#">Usuarios</a>
+        <a href="./users.htm">Usuarios</a>
       </nav>
     </header>
     <main>
@@ -37,7 +40,7 @@
               </div>
               <div class="user-item__info">
                 <h2>Adele Vance</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>
@@ -50,7 +53,7 @@
               </div>
               <div class="user-item__info">
                 <h2>Alex Wilber</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>
@@ -63,7 +66,7 @@
               </div>
               <div class="user-item__info">
                 <h2>Diego Siciliani</h2>
-                <h2>0</h2>
+                <h3>0</h3>
               </div>
             </a>
           </div>
